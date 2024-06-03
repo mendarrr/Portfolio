@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
@@ -146,112 +147,69 @@ section{
 }
 
 /* Home Section */
-  .wrapper {
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    position: absolute;
-  }
-  
-  .wrapper h1 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-family: sans-serif;
-    word-spacing: 2px;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 900;
-  }
-  
-  .wrapper div {
-    height: 60px;
-    width: 60px;
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    border-radius: 100px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    animation: 4s linear infinite;
-  }
-  
-  .wrapper div:nth-child(2) {
-    top: 20%;
-    left: 20%;
-    animation: animate 8s linear infinite;
-  }
-  
-  .wrapper div:nth-child(3) {
-    top: 60%;
-    left: 80%;
-    animation: animate 10s linear infinite;
-  }
-  
-  .wrapper div:nth-child(4) {
-    top: 40%;
-    left: 40%;
-    animation: animate 3s linear infinite;
-  }
-  
-  .wrapper div:nth-child(5) {
-    top: 66%;
-    left: 30%;
-    animation: animate 7s linear infinite;
-  }
-  
-  .wrapper div:nth-child(6) {
-    top: 90%;
-    left: 10%;
-    animation: animate 9s linear infinite;
-  }
-  
-  .wrapper div:nth-child(7) {
-    top: 30%;
-    left: 60%;
-    animation: animate 5s linear infinite;
-  }
-  
-  .wrapper div:nth-child(8) {
-    top: 70%;
-    left: 20%;
-    animation: animate 8s linear infinite;
-  }
-  
-  .wrapper div:nth-child(9) {
-    top: 75%;
-    left: 60%;
-    animation: animate 10s linear infinite;
-  }
-  
-  .wrapper div:nth-child(10) {
-    top: 50%;
-    left: 50%;
-    animation: animate 4s linear infinite;
-  }
-  
-  .dot {
-    height: 5px;
-    width: 5px;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    top: 20%;
-    right: 20%;
-  }
-  
-  @keyframes animate {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: translate(200px, 100px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
+#home-section{
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section{
+    padding: 100px 0;
+    background: url(https://i.pinimg.com/originals/97/1c/8e/971c8efac99f998424e8ebac3d77eb21.gif);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.intro-text {
+    opacity: 1;
+    transition: opacity 7.5s;
+    font-size: 190px;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 90px;
+    font-family: "Dancing Script", cursive;
+    color: rgb(255, 204, 146);
   }
 
+.header-text {
+    opacity: 0;
+    transition: opacity 3.5s;
+    font-size: 250px;
+    letter-spacing: 3px;
+    font-family: "Dancing Script", cursive;
+    margin-top: -100px;
+}
+
+.header-text span{
+    color: blanchedalmond;
+}
+
+.subheading {
+    opacity: 0;
+    transition: opacity 15.5s;
+    font-size: 30px;
+  }
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+}
+
+.fadeInUp-animation {
+    animation: 4.5s fadeInUp;
+  }
+  
 /* About Section */
 .about-section{
     background: black;
