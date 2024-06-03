@@ -47,6 +47,10 @@ section{
     display: none;
 }
 
+.hidden{
+    display: none;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -140,3 +144,249 @@ section{
 .sidebar .nav li .active:hover{
     transform: scale(1.09);
 }
+
+/* Home Section */
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+  }
+  
+  .wrapper h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: sans-serif;
+    word-spacing: 2px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  
+  .wrapper div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 100px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 4s linear infinite;
+  }
+  
+  .wrapper div:nth-child(2) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  
+  .wrapper div:nth-child(3) {
+    top: 60%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .wrapper div:nth-child(4) {
+    top: 40%;
+    left: 40%;
+    animation: animate 3s linear infinite;
+  }
+  
+  .wrapper div:nth-child(5) {
+    top: 66%;
+    left: 30%;
+    animation: animate 7s linear infinite;
+  }
+  
+  .wrapper div:nth-child(6) {
+    top: 90%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+  }
+  
+  .wrapper div:nth-child(7) {
+    top: 30%;
+    left: 60%;
+    animation: animate 5s linear infinite;
+  }
+  
+  .wrapper div:nth-child(8) {
+    top: 70%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  
+  .wrapper div:nth-child(9) {
+    top: 75%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .wrapper div:nth-child(10) {
+    top: 50%;
+    left: 50%;
+    animation: animate 4s linear infinite;
+  }
+  
+  .dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(200px, 100px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+/* About Section */
+.about-section{
+    background: black;
+    color: white;
+}
+
+.about-container{
+    margin-left: 25px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.col-1{
+    margin-left: -280px;
+}
+
+.col-2{
+    border: 1px solid white;
+    min-width: 1020px;
+    margin-left: 170px;
+    margin-top: -630px;
+}
+  
+.abt-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+  
+  .about-text {
+    padding: 20px;
+  }
+  
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sub-heading{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(6, 197, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills{
+    margin-left: 25px;
+    margin-right: 10px;
+    color: white;
+    padding: 1%;
+    font-size: 20px;
+    border-radius: 15px;
+}
+  
+.container {
+    width: 100%;
+    background-color: black;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 2px;
+    line-height: 2vh;
+}
+
+.label{
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 600;
+    color: rgb(187, 231, 245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skill{
+    background-color: #a5fcfc;
+    border-radius: 20px;
+}
+
+.html {
+    width: 90%;
+}
+  
+.css {
+    width: 85%;
+}
+  
+.js {
+    width: 55%;
+}
+
+.react {
+    width: 70%;
+}
+
+.py {
+    width: 80%;
+}
+
+.mission .sub-heading{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(6, 197, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+}
+
+.mlist{
+    line-height: 4vh;
+    margin-left: 20px;
+}
+
+/* Projects Section */
+
+/* Services Section */
+
+/* Contact Section */
