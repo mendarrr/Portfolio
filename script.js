@@ -27,3 +27,40 @@ links.forEach((link) => {
  setTimeout(() => {
    subheading.style.opacity = 1; // fade in subheading
  }, 2000); // wait 2 seconds
+
+
+ fetch('apps.json')
+  .then(response => response.json())
+  .then(data => {
+    const appList = document.getElementById('app-list');
+    data.forEach(project => {
+      const appHTML = `
+        <div class="project-item">
+          <img src="${project.image}" alt="${project.title}">
+          <h2>${project.title}</h2>
+          <p>${project.description}</p>
+          <a href="${project.link}" target="_blank">View Project</a>
+        </div>
+      `;
+      appList.innerHTML += appHTML;
+    });
+  })
+  .catch(error => console.error('Error:', error));
+
+  fetch('websites.json')
+  .then(response => response.json())
+  .then(data => {
+    const websiteList = document.getElementById('website-list');
+    data.forEach(project => {
+      const websiteHTML = `
+        <div class="project-item">
+          <img src="${project.image}" alt="${project.title}">
+          <h2>${project.title}</h2>
+          <p>${project.description}</p>
+          <a href="${project.link}" target="_blank">View Project</a>
+        </div>
+      `;
+      websiteList.innerHTML += websiteHTML;
+    });
+  })
+  .catch(error => console.error('Error:', error));
