@@ -248,10 +248,10 @@ section{
 }
 
 .col-2{
-    border: 1px solid white;
     min-width: 1020px;
-    margin-left: 170px;
+    margin-left: 150px;
     margin-top: -630px;
+    padding: 10px;
 }
   
 .abt-img img {
@@ -262,9 +262,12 @@ section{
 
   }
   
-  .about-text {
-    padding: 20px;
-  }
+.abt-text {
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: center;
+}
   
 .sub-title{
     font-size: 60px;
@@ -273,49 +276,43 @@ section{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .sub-heading{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
     color: rgb(6, 197, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Dancing Script";
+    text-align: center;
 }
 
 .skills{
-    margin-left: 25px;
-    margin-right: 10px;
-    color: white;
-    padding: 1%;
-    font-size: 20px;
-    border-radius: 15px;
-}
-  
-.container {
-    width: 100%;
-    background-color: black;
-    border-radius: 15px;
-    margin-right: 10px;
-    padding: 2px;
-    line-height: 2vh;
+    display: inline-block;
+    margin-left: 40px;
+    padding: 20px;
+    margin-bottom: 15px;
 }
 
 .label{
-    font-size: 16px;
-    margin-left: 10px;
+    font-size: 15px;
     font-weight: 600;
-    color: rgb(187, 231, 245);
+    color: rgb(6, 197, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
 }
 
-.skill{
-    background-color: #a5fcfc;
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    color: black;
+    width: 900px;
     border-radius: 20px;
 }
 
-.html {
-    width: 90%;
-}
-  
-.css {
-    width: 85%;
+.skill{
+    background: var(--bg-black-100);
+    align-self: self-start;
+    border-radius: 20px;
 }
   
 .js {
@@ -521,6 +518,56 @@ section{
     color: white;
 }
 
-
-
 /* Contact Section */
+.contact-section{
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.contact-section h1{
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(6, 197, 255);
+    font-family: "Dancing Script", cursive;
+}
+  
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    flex-basis: 50%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
