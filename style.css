@@ -416,5 +416,79 @@ section{
 }
 
 /* Services Section */
+.services-section{
+    background: black;
+    color: white;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+.services-container h1{
+    font-size: 75px;
+    font-weight: 600;
+    color: rgb(6, 197, 255);
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.card-list{
+    border: 1px solid white;
+    border-radius: 45px;
+    height: 25vh;
+    text-align: center;
+    padding: 35px;
+    cursor: progress;
+}
+
+.fas{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+  
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.services-list li {
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    align-items: center;
+    justify-content: center;
+}
+
+.services-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+.services-list li:hover i {
+    animation: spin 1s linear;
+}
+  
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+  /* Add more responsive styles as needed */
 
 /* Contact Section */
