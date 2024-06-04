@@ -362,10 +362,12 @@ section{
 }
 
 .projects-container h1{
-    font-size: 35px;
+    font-size: 100px;
     font-weight: 600;
+    text-align: center;
     color: rgb(6, 197, 255);
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Dancing Script", cursive;
+    margin-top: -60px;
 }
 
 .projects-container p{
@@ -374,6 +376,12 @@ section{
     color: rgb(162, 222, 240);
     font-family:'Times New Roman', Times, serif;
 }
+
+.title{
+    margin-left: 80px;
+    letter-spacing: 3px;
+    color: aqua;
+}
   
 .project-list {
     display: flex;
@@ -381,6 +389,7 @@ section{
     justify-content: flex-start;
     overflow-x: auto;
     padding: 20px;
+    margin-top: -5px;
 }
   
 .project-item {
@@ -421,74 +430,97 @@ section{
     color: white;
 }
 
-.services-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-.services-container h1{
-    font-size: 75px;
+.services-section h1{
+    font-size: 90px;
     font-weight: 600;
+    text-align: center;
     color: rgb(6, 197, 255);
-    font-family:'Times New Roman', Times, serif;
-    text-align: center;
+    font-family: "Dancing Script", cursive;
 }
 
-.card-list{
-    border: 1px solid white;
-    border-radius: 45px;
-    height: 25vh;
-    text-align: center;
-    padding: 35px;
-    cursor: progress;
-}
-
-.fas{
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-  
-.services-content {
+.services-container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-  
-.services-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-  
-.services-list li {
-    margin: 20px;
-    width: calc(33.33% - 40px);
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: -20px;
+    justify-content: space-around;
 }
 
-.services-list li:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.card{
+    position: relative;
+    width: 500px;
+    height: 300px;
 }
-  
-.services-list li:hover i {
-    animation: spin 1s linear;
+
+.card img{
+    width: 460px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 20px;
+
 }
-  
-@keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+
+.card:hover .imgBx img{
+    opacity: 0;
 }
-  
-  /* Add more responsive styles as needed */
+
+.services-container .card{
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+
+.services-container .card .imgBx{
+    position: absolute;
+    inset: 0;
+    background: black;
+    border-radius: 20px;
+}
+
+.services-container .card .c3d{
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(0);
+}
+
+.services-container .card:hover .c3d{
+    opacity: 1;
+    transform: translateY(-35px);
+}
+
+.card h2{
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    transform: translateX(-50%);
+    color: aliceblue;
+    font-size: 29px;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    width: 300px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    background:#181725;
+    text-align: center;
+}
+
+.card h2:hover{
+    background: transparent ;
+    color: white;
+}
+
+
 
 /* Contact Section */
