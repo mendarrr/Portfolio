@@ -1,44 +1,37 @@
 [
     {
-      "id": 1,
-      "title": "BvkLuv",
-      "description": "A book management app",
-      "image": "/assets/bukluv.png",
-      "link": "https://main--genuine-jelly-da817e.netlify.app/"
-    },
-    {
       "id": 2,
       "title": "FromMemory",
       "description": "An app for creating flashcards",
-      "image": "./assets/fromemory.png",
+      "image": "./assets/imgs/fromemory.png",
       "link": "https://example.com/project2"
     },
     {
       "id": 3,
       "title": "FilmFan",
       "description": "A movie management app",
-      "image": "./assets/filmfan.png",
+      "image": "./assets/imgs/filmfan.png",
       "link": "https://example.com/project3"
     },
     {
       "id": 1,
       "title": "BvkLuv",
       "description": "A book management app",
-      "image": "/assets/bukluv.png",
+      "image": "/assets/imgs/bukluv.png",
       "link": "https://main--genuine-jelly-da817e.netlify.app/"
     },
     {
       "id": 2,
       "title": "FromMemory",
       "description": "An app for creating flashcards",
-      "image": "./assets/fromemory.png",
+      "image": "./assets/imgs/fromemory.png",
       "link": "https://example.com/project2"
     },
     {
       "id": 3,
       "title": "FilmFan",
       "description": "A movie management app",
-      "image": "./assets/filmfan.png",
+      "image": "./assets/imgs/filmfan.png",
       "link": "https://example.com/project3"
     }
   ]

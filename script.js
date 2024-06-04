@@ -29,7 +29,7 @@ links.forEach((link) => {
  }, 2000); // wait 2 seconds
 
 
- fetch('apps.json')
+ fetch('./assets/apps.json')
   .then(response => response.json())
   .then(data => {
     const appList = document.getElementById('app-list');
@@ -47,7 +47,7 @@ links.forEach((link) => {
   })
   .catch(error => console.error('Error:', error));
 
-  fetch('websites.json')
+  fetch('./assets/websites.json')
   .then(response => response.json())
   .then(data => {
     const websiteList = document.getElementById('website-list');
