@@ -171,7 +171,7 @@ section{
     line-height: 1;
     margin-top: 90px;
     font-family: "Dancing Script", cursive;
-    color: rgb(255, 204, 146);
+    color: rgb(162, 222, 240);
   }
 
 .header-text {
@@ -184,7 +184,7 @@ section{
 }
 
 .header-text span{
-    color: blanchedalmond;
+    color: rgb(6, 197, 255);
 }
 
 .subheading {
