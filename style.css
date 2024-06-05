@@ -191,6 +191,8 @@ section{
     opacity: 0;
     transition: opacity 15.5s;
     font-size: 30px;
+    letter-spacing: 10px;
+    color: rgb(162, 222, 240);
   }
 
 @keyframes fadeInUp {
@@ -207,6 +209,7 @@ section{
 .fadeInUp-animation {
     animation: 4.5s fadeInUp;
   }
+
   
 /* About Section */
 .about-section{
