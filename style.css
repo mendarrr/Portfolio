@@ -251,7 +251,7 @@ section{
 .col-2{
     min-width: 1020px;
     margin-left: 150px;
-    margin-top: -630px;
+    margin-top: -670px;
     padding: 10px;
 }
   
@@ -298,14 +298,27 @@ section{
     margin-left: 50px;
 }
 
-.skill-container{
+.skill-col{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-col-1{
+    margin-right: 20px;
+    margin-left: -45px;
+}
+
+.skill-col-1, .skill-col-2 {
+    flex: 3;
+  }
+
+.skill-container{
     justify-content: space-between;
     align-items: center;
     border: 1px solid whitesmoke;
     color: black;
-    width: 900px;
+    width: 470px;
     border-radius: 20px;
 }
 
@@ -313,6 +326,14 @@ section{
     background: var(--bg-black-100);
     align-self: self-start;
     border-radius: 20px;
+}
+
+.html{
+    width: 95%;
+}
+
+.css{
+    width: 90%;
 }
   
 .js {
@@ -325,6 +346,14 @@ section{
 
 .py {
     width: 80%;
+}
+
+.sql{
+    width: 75%;
+}
+
+.flask{
+    width: 20%;
 }
 
 .mission .sub-heading{
