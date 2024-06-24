@@ -22,6 +22,29 @@ links.forEach((link) => {
    subheading.style.opacity = 1;
  }, 2000);
 
+// Hire me Button animation
+const button = document.querySelector(".button");
+const contactSection = document.querySelector("#contact-section");
+
+button.addEventListener("click", (e) => {
+  e.preventDefault;
+  button.classList.add("animate");
+  setTimeout(() => {
+    button.classList.remove("animate");
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }, 600);
+});
+
+function getRandomColor() {
+  const colors = ['#FF69B4', '#33CC33', '#66CCCC', '#FFCC00', '#0099CC'];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function getRandomColor() {
+  const colors = ['#FF69B4', '#33CC33', '#66CCCC', '#FFCC00', '#0099CC'];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
 // Making the Project Section Dynamic for easier update
  fetch('./assets/apps.json')
   .then(response => response.json())
