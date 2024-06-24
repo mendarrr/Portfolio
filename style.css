@@ -916,3 +916,8 @@ section{
         padding: 50px;
     }
 }
+
+/* Footer */
+footer{
+    display: none;
+}
