@@ -82,3 +82,44 @@ function getRandomColor() {
   })
   .catch(error => console.error('Error:', error));
 
+// Adding Functionality to the Contact Form
+// Add an event listener to the form's submit event
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get the form data
+  const formData = new FormData(event.target);
+
+  // Send the form data to the server using fetch API
+  fetch('/submit-contact-form', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+    // Display a success message or perform any other actions
+    showFeedbackMessage('Your message has been sent successfully.', 'success');
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    // Display an error message or perform any other actions
+    showFeedbackMessage('There was an error sending your message. Please try again later.', 'error');
+  });
+});
+
+// Function to display feedback messages
+const feedbackMessage = document.getElementById('feedback-message');
+
+function showFeedbackMessage(message, type) {
+  feedbackMessage.textContent = message;
+  feedbackMessage.classList.remove('success', 'error');
+  feedbackMessage.classList.add(type);
+  feedbackMessage.style.display = 'block';
+
+  setTimeout(() => {
+    feedbackMessage.style.display = 'none';
+  }, 5000);
+}
