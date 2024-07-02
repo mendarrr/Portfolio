@@ -287,18 +287,18 @@
     </ul>
   </div>
   <div class="contactForm">
-    <form action="">
+    <form id="contact-form" action="" method="post">
       <h2>Send Message</h2>
       <div class="inputBox">
-        <input type="text" name="" required="required" />
+        <input type="text" id="name" name="name" required="required" />
         <span>Full Name</span>
       </div>
       <div class="inputBox">
-        <input type="text" name="" required="required" />
+        <input type="email" id="email" name="email" required="required" />
         <span>Email</span>
       </div>
       <div class="inputBox">
-        <textarea required="required"></textarea>
+        <textarea id="message" name="message" required="required"></textarea>
         <span>Type your message...</span>
       </div>
       <div class="inputBox">
@@ -306,6 +306,7 @@
       </div>
     </form>
   </div>
+  
 </div>
 </section>
 <!-- Contact Section Ends-->
